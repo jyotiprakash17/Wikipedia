@@ -15,6 +15,6 @@ This is a simple and interactive Wikipedia search app where you can search for a
 - **CSS**: For styling and layout.
 - **JavaScript**: For fetching data from Wikipedia API and handling user interactions.
 
-3. Type any search term in the input box and hit "Search". The results will be displayed below.
+
 
 

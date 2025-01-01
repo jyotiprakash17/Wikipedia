@@ -1,49 +1,20 @@
-#### HTML Structure
+# Wikipedia Search App 🔎
 
-- section.wiki
-  - div.container
-    - img
-    - h3(text)
-    - form.form
-      - input.form-input type='text'
-      - button.submit-btn (search) type='submit'
-  - div.results
-    - div.articles
-      - a
-        - h4
-        - p (lorem20)
+This is a simple and interactive Wikipedia search app where you can search for articles on Wikipedia using their API. 🎉
 
-#### API DOCS
+## 🛠️ Features
 
-- [wiki docs](https://www.mediawiki.org/wiki/API:Main_page)
+- **Search Wikipedia**: Search for Wikipedia articles.
+- **Error Handling**: Displays a message if no results are found or if there's an issue with the fetch request.
+- **Responsive**: Works seamlessly on all screen sizes (desktop, tablet, and mobile).
+- **Simple & Fast**: Get results instantly as you search.
 
-- ready to go url's
+## 💻 Technologies Used
 
-#### Initial Setup
+- **HTML**: For creating the structure of the app.
+- **CSS**: For styling and layout.
+- **JavaScript**: For fetching data from Wikipedia API and handling user interactions.
 
-- select form, input, results
-- listen for submit events
-- if empty value, display error
-- create fetchPages()
-- pass valid input value into the fetchPages()
+3. Type any search term in the input box and hit "Search". The results will be displayed below.
 
-#### Fetch Pages
 
-- display loading while fetching
-- construct dynamic url
-- display if error
-- display error no items
-- create renderResults()
-- pass valid results into renderResults()
-
-#### Render Results
-
-- iterate over the list
-- pull out title, snippet, pageid
-- setup a card
-- set results with div.articles and list inside
-
-### screenshot
-
-![Screenshot 2023-01-20 15![Screenshot 2023-01-20 152958](https://user-images.githubusercontent.com/105864220/213847760-705ec3c6-a5ac-4203-a648-c5cd147c41c2.png)
-2537](https://user-images.githubusercontent.com/105864220/213847755-86d9aad1-cd87-400c-bbc3-289993f65a1a.png)

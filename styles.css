@@ -1,0 +1,126 @@
+/* Global Styles */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /*16px*/
+}
+
+:root {
+  --primary-500: #645cff;
+  --primary-700: #3c3799;
+  --grey-50: #f8fafc;
+  --grey-200: #e2e8f0;
+  --grey-900: #0f172a;
+  --white: #fff;
+  --black: #222;
+  --borderRadius: 0.25rem;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1120px;
+  --fixed-width: 600px;
+}
+
+body {
+  background-color: var(--grey-50);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--grey-900);
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.wiki {
+  padding: 5rem 0;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.container img {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-input {
+  padding: 0.5rem;
+  border: 1px solid var(--grey-200);
+  border-radius: var(--borderRadius);
+  width: 80%;
+}
+
+.submit-btn {
+  padding: 0.5rem 1rem;
+  background: var(--primary-500);
+  color: var(--white);
+  border: none;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit-btn:hover {
+  background: var(--primary-700);
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.error {
+  text-align: center;
+  color: #f44336;
+}
+
+.articles {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.articles a {
+  background: var(--white);
+  color: var(--grey-900);
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.articles a:hover {
+  background: var(--primary-500);
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
